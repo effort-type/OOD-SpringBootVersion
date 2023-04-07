@@ -33,4 +33,5 @@ public class Ch05Controller {
     public String simpleTagTest(@PathVariable Integer number) {
         return String.format("ch05/simpletagtest/index%d", number);
     }
+    
 }
