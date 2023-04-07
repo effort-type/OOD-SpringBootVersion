@@ -20,6 +20,11 @@ public class Ch05Controller {
         return "/ch05/eltest/index";
     }
     
+    @GetMapping("/ch05/elimplicitobject")
+    public String elimplicitObject() {
+        return "ch05/elimplicitobject/index";
+    }
+    
     /**
      * @param number 1..3
      * @return 
