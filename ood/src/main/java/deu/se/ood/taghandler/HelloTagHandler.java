@@ -7,7 +7,6 @@ package deu.se.ood.taghandler;
 import java.io.IOException;
 import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.JspException;
-import javax.servlet.jsp.tagext.JspFragment;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 import lombok.extern.slf4j.Slf4j;
 
@@ -19,9 +18,10 @@ import lombok.extern.slf4j.Slf4j;
 public class HelloTagHandler extends SimpleTagSupport {
 
     /**
-     * Called by the container to invoke this tag. The implementation of this
-     * method is provided by the tag library developer, and handles all tag
-     * processing, body iteration, etc.
+     * Called by the container to invoke this tag.The implementation of this
+ method is provided by the tag library developer, and handles all tag
+ processing, body iteration, etc.
+     * @throws javax.servlet.jsp.JspException
      */
     @Override
     public void doTag() throws JspException {
