@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package deu.se.ood.bean.ch04;
+package deu.se.ood.beans.ch04;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +11,10 @@ import org.slf4j.LoggerFactory;
 
 /**
  *
- * @author admin
+ * @author 정민수
+ * 
+ * 일반적으로 getter, setter를 사용해서 Bean을 정의하는 클래스
+ * 
  */
 public class SumBean {
     private Logger log = LoggerFactory.getLogger(getClass());
