@@ -16,7 +16,7 @@
         <!-- 절대 경로 사용 시에는 제어기(Ch04Controller)에 RequestMapping 정의해서 사용 가능 -->
         <!-- jsp:include page="/jspf/header" / -->
         <jsp:include page="header.jsp" /> <!-- 교재 방식: 동일 폴더에 있는 .jsp 포함 -->
-        <!-- <jsp:include page="../../jspf/header.jsp" /> --><!-- 상대 경로 상의 .jsp 포함 가능 -->
+        <%-- <jsp:include page="../../jspf/header.jsp" /> --%><!-- 상대 경로 상의 .jsp 포함 가능 -->
         본문 내용입니다.
         <% request.setCharacterEncoding("UTF-8");%>
         <jsp:include page="footer.jsp">
