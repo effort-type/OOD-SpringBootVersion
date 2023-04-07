@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
         <title>Java Beans 사용 예제</title>
-        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPate}/css/my_style.css">
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/my_style.css">
     </head>
     <body>
         <h2>1부터 n까지의 합을 구하는 프로그램</h2>

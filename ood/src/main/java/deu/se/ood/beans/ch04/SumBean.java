@@ -23,6 +23,7 @@ public class SumBean {
 
     public SumBean() {
         log.debug("The instance SumBean created...");
+        result = 0;
     }
     
     public void caculate() {
