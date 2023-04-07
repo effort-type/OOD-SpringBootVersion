@@ -17,9 +17,14 @@
             <li>웹 브라우저 : ${header["user-agent"]}</li>
             <li>사용자 컴퓨터 : ${header.host}</li>
             <li>HTTP 메소드 : ${pageContext.request.method}</li>
-            <li>웹 브라우저 : ${header["user-agent"]}</li>
-            <li>웹 브라우저 : ${header["user-agent"]}</li>
+            <li>name 매개변수 : ${ empty param["name"] ? "없음" : param.name }</li>
+            <li>세션 ID : ${ cookie["JSESSIONID"].value }</li>
         </ol>
-        <h1>Hello World!</h1>
+        
+        <div>
+            headers : <%= java.util.Collections.list(request.getHeaderNames())%>
+        </div>
+        
+            <%@include file="/WEB-INF/jspf/main_footer.jspf" %>
     </body>
 </html>
