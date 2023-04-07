@@ -9,7 +9,7 @@ import lombok.Setter;
 
 /**
  *
- * @author admin
+ * @author 정민수
  */
 public class UserInfo {
     
