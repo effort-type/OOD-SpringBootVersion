@@ -79,4 +79,9 @@ public class Ch04Controller {
         
         return "ch04/beans/show_sum2";
     }
+    
+    @GetMapping("/ch04/include")
+    public String ch04IncludeTest2() {
+        return "ch04/include/index";
+    }
 }
