@@ -20,6 +20,11 @@ public class Ch05Controller {
         return "/ch05/eltest/index";
     }
     
+    @GetMapping("/ch05/elimplicitobject")
+    public String elimplicitObject() {
+        return "ch05/elimplicitobject/index";
+    }
+    
     /**
      * @param number 1..3
      * @return 
@@ -28,4 +33,5 @@ public class Ch05Controller {
     public String simpleTagTest(@PathVariable Integer number) {
         return String.format("ch05/simpletagtest/index%d", number);
     }
+    
 }

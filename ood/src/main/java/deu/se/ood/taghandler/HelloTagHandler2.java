@@ -7,31 +7,40 @@ package deu.se.ood.taghandler;
 import java.io.IOException;
 import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.tagext.JspFragment;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
 /**
  *
- * @author admin
+ * @author 정민수
  */
 @Slf4j
-public class HelloTagHandler extends SimpleTagSupport {
+public class HelloTagHandler2 extends SimpleTagSupport {
+
+    @Setter
+    private String user;
+    @Setter
+    private int count = 1;
 
     /**
-     * Called by the container to invoke this tag.The implementation of this
- method is provided by the tag library developer, and handles all tag
- processing, body iteration, etc.
-     * @throws javax.servlet.jsp.JspException
+     * Called by the container to invoke this tag. The implementation of this
+     * method is provided by the tag library developer, and handles all tag
+     * processing, body iteration, etc.
      */
     @Override
     public void doTag() throws JspException {
         JspWriter out = getJspContext().getOut();
         
         try {
-            out.println("안녕하십니까?");
+            for (int i = 0; i < count; i++) {
+                out.println(String.format("%s님, 안녕하십니까? <br>", user));
+            }
         } catch (IOException e) {
-            log.error("HelloTagHandler : 예외 = {}", e.getMessage());
+            log.error("HelloTagHandler: 예외 = {}", e.getMessage());
         }
+        
     }
-    
+
 }
