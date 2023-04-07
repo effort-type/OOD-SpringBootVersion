@@ -14,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
@@ -83,5 +84,10 @@ public class Ch04Controller {
     @GetMapping("/ch04/include")
     public String ch04IncludeTest2() {
         return "ch04/include/index";
+    }
+    
+    @RequestMapping("/ch04/forward") // RequestMapping : GetMapping + PostMapping
+    public String ch04ForwardTest(HttpServletRequest request) {
+        return "ch04/forward/index";
     }
 }
