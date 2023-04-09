@@ -4,10 +4,7 @@
  */
 package deu.se.ood.beans.ch04;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-
+import lombok.extern.slf4j.Slf4j;
 
 /**
  *
@@ -16,8 +13,8 @@ import org.slf4j.LoggerFactory;
  * 일반적으로 getter, setter를 사용해서 Bean을 정의하는 클래스
  * 
  */
-public class SumBean {
-    private Logger log = LoggerFactory.getLogger(getClass());
+@Slf4j
+public class SumBean {    
     private int n;
     private int result;
 
