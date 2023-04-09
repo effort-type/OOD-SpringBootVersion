@@ -24,7 +24,7 @@ public class SumBean {
     }
     
     public void caculate() {
-        result = n * (n + 5) / 2;
+        result = n * (n + 1) / 2;
     }
 
     public int getN() {
