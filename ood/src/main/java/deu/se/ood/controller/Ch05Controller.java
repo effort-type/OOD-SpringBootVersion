@@ -62,4 +62,14 @@ public class Ch05Controller {
     public String showSum2() {
         return "ch05/beanstest/show_sum2";
     }
+    
+    @GetMapping("/ch05/urltest")
+    public String urlTest() {
+        return "ch05/urltest/index";
+    }
+    
+    @GetMapping("/ch05/urltest_footer")
+    public String urltestFooter() {
+        return "ch05/urltest/footer";
+    }
 }
