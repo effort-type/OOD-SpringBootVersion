@@ -45,14 +45,26 @@
             <optional>true</optional>
         </dependency>
         
+        <!-- tomcat-embed-jasper 의존성 추가-->
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
         </dependency>
+        
+        <!-- jstl 의존성 추가 -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
         </dependency>
+        
+        <!-- MySQL Connector 드라이버 의존성 추가 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.32</version>
+        </dependency>
+
+        
     </dependencies>
 
     <build>
