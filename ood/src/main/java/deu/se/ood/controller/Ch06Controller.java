@@ -7,6 +7,7 @@ package deu.se.ood.controller;
 
 import deu.se.ood.model.ch06.AddrBookManager;
 import deu.se.ood.model.ch06.AddrBookRow;
+import deu.se.ood.model.ch06.HikariConfiguration;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,6 +43,8 @@ public class Ch06Controller {
     
     @Autowired
     private Environment env; // application.propertys의 값을 읽어오게 해주는 객체
+    @Autowired
+    private HikariConfiguration dbConfig;
     
     @GetMapping("/ch06/showtable1")
     public String showTable1(Model model) {
@@ -103,4 +106,10 @@ public class Ch06Controller {
         
         return "redirect:/ch06/inserttable";  // 사용법 중요함!!
     }
+    
+    @GetMapping("ch06/hikari_cp")
+    public String hikariCP(Model model) {
+        model.addAttribute("dbConfig", dbConfig);
+        return "ch06/hikari_cp/index";
+    }    
 }
