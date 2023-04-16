@@ -40,4 +40,13 @@ public class Ch06Controller {
         log.info("mysql_server.ip = {}, mysql_server.port = {}", this.mysqlServerIp, this.mysqlServerPort);
         return "ch06/showtable1/index";
     }
+    
+    @GetMapping("/ch06/showtable2")
+    public String showTable2(Model model) {
+        log.debug("showtable2: server = {}, port = {}", mysqlServerIp, mysqlServerPort);
+        
+        model.addAttribute("mysql_server_ip", mysqlServerIp);
+        model.addAttribute("mysql_server_port", mysqlServerPort);
+        return "ch06/showtable2/index";
+    }
 }
