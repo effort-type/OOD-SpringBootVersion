@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  *
  * property 파일 읽는 방법 2가지
- * 1. 메소드 만들어서 PropertiesFactoryBean 사용해서 읽는 방법 => OodApplication에 있ㅇ므
+ * 1. 메소드 만들어서 PropertiesFactoryBean 사용해서 읽는 방법 => OodApplication에 있음
  * 2. PropertySource 어노테이션 사용해서 바로 읽는 방법
  * 
  * Propertysource 어노테이션을 통해 config.properties에서 읽은 파일에 해당하는 값을

@@ -1,7 +1,7 @@
 <%-- 
     Document   : addrbook
     Created on : 2023. 4. 17., 오전 12:40:57
-    Author     : admin
+    Author     : 정민수
 --%>
 
 <%@tag description="put the tag description here" pageEncoding="UTF-8"%>
